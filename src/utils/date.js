@@ -5,4 +5,4 @@ function getToday() {
 	return weekdays[new Date().getDay()]
 }
 
-export { getToday }
+export { getToday, weekdays }
