@@ -2,10 +2,11 @@
 // 1.2. Todos ska sorteras i rätt dag, även om det finns flera på en och samma
 // 2. Den ska retuerna en tom array om det inte finns några tasks för en dag
 // 3. Om tasksen inte har korrekta veckodagar ska den ignoreras 
+// Lägg till om tid finns: felaktig input
 
 // TODO: write unit tests for this function, and finish it
 function splitTodosIntoDays(todos) {
-    const daysOfWeek = ['mo', 'ti', 'on', 'to', 'fr'];
+    const daysOfWeek = ['mo', 'ti', 'on', 'to', 'fr', 'sa', 'su'];
     const result = daysOfWeek.map(day => todos.filter(t => t.day === day));
     return result;
 }

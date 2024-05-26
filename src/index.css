@@ -94,11 +94,19 @@ h2 {
 .day {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 .day .item {
     flex-grow: 1;
     padding: 0 0.4em;
     margin: 0.2em 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.day .item div input {
+    margin-right: 0.6em;
 }
 .day .item:hover {
     box-shadow: 0 0 0.2em var(--c2);
